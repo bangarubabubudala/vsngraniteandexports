@@ -1,0 +1,62 @@
+import React, { useState } from 'react'
+import { Container } from 'react-bootstrap';
+import { Media } from '../images/Pics.js';
+import './Gallary.css'
+
+
+
+const Gallary = () => {
+
+    const [file, setFile] = useState(null);
+    console.log(Media);
+
+
+
+    return (
+        <div id="service" className='outer-page-content-container'>
+            <div className="products-galary-bg">
+                <div className="container">
+                    <div className="wpb_wrapper">
+                        <div className="default-heading">WHAT MAKES US GREAT
+                            <h3 className="special-heading-3">OUR <span className="wbc-color">PRODUCT RANGE</span></h3>
+                            <hr className="wbc-hr" />
+                            <p className="default-heading" style={{ textAlign: "center", wordWrap: "break-word",  }}>
+                                Welcome to India's Top Manufacturer and Exporter of Granite, Marbles. PM International is
+                                a wonderful hub for the finest quality Indian granite with a broad selection of marbles.
+                                The architecture of households, offices, commercial buildings, hospitals, schools, and other
+                                structures serves the collection of diverse granite and marbles.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="media-container">
+                        {
+                            Media.map((file, index) => (
+                                <div className="media" key={index} onClick={() => setFile(file)}>
+                                    {
+                                        file.type === 'image' ? <div className="cards-list">
+
+                                            <div className="card-stone 1">
+                                                <div className="card_image"> <img src={file.url} alt='#' /> </div>
+                                                <div className="card_title title-white">
+                                                    <p>{file.title}</p>
+                                                </div>
+                                            </div>
+                                        </div> : null
+                                    }
+                                </div>
+                            ))
+                        }
+                    </div>
+                    <div className="popup-media" style={{ display: file ? 'block' : 'none' }}>
+                        <span onClick={() => setFile(null)}>&times;</span>
+                        {
+                            file?.type === 'image' ? <img src={file?.url} ></img> : null
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Gallary

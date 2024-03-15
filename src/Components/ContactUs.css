@@ -1,0 +1,199 @@
+
+/* .contact-us-layout{
+   border: 6px solid #33d6e5;
+    border-radius: 15px;
+  
+  } */
+.contcat-from {
+  width: 100%;
+  padding: 20px;
+
+  /* background: #ffffff; */
+}
+
+.contcat-from h2 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.contcat-from .inputbox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contcat-from .inputbox input,
+.contcat-from .inputbox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 15px;
+  padding-left: 15px;
+}
+
+.contcat-from .inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+  font-weight: 400;
+}
+
+.contcat-from .inputbox input:focus~span,
+.contcat-from .inputbox input:valid~span,
+.contcat-from .inputbox textarea:focus~span,
+.contcat-from .inputbox textarea:valid~span {
+  color: #33d6e5;
+  font-size: 15px;
+  /* top: -10px; */
+  transform: translateY(-30px);
+}
+
+.contcat-from .inputbox input[type="submit"] {
+  width: 100%;
+  background: #6e7374;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 5px 35px;
+  font-size: 20px;
+  border-radius: 24px;
+}
+
+.contcat-from .inputbox input[type="submit"]:hover {
+  background: #00bcd4;
+  box-shadow: 1px 1px 5px #00bcd4;
+}
+
+.inputcenter {
+  display: flex;
+  justify-content: center;
+}
+
+.cnt-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.cnt-form-1 {
+  /* background: #000; */
+  border-radius: 15px;
+  width: 60%;
+}
+
+.cnt-form-2 {
+  border: 5px solid #888;
+  border-radius: 15px;
+
+  width: 100%;
+}
+
+.cnt-form-2 iframe {
+  width: 100%;
+
+  border-radius: 10px;
+
+}
+
+@media (max-width:991px) {
+
+  .cnt-container {
+    /* width: 100%; */
+    flex-direction: column;
+  }
+
+  .cnt-form-1 {
+    width: 100%;
+  }
+
+  .contcat-from {
+    width: 100%;
+    padding: 20px;
+    /* background: #ffffff; */
+    background: rgb(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+  }
+
+}
+
+.full-page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+
+/* Add this CSS in your styles file or component */
+
+/* Slide styles */
+.slide {
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+  /* Add transition for a smooth fade effect */
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+  /* Make the active slide fully visible */
+}
+
+/* Add this CSS in your styles file or component */
+
+/* Container styles */
+.bubbles-container {
+  display: flex;
+  justify-content: center;
+  /* Align bubbles horizontally at the center */
+}
+
+/* Bubble styles */
+.bubble {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  /* Inactive bubble color */
+  border-radius: 50%;
+  /* Make it round */
+  margin: 0 5px;
+  /* Adjust spacing between bubbles */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  /* Add transition for a smooth color change */
+}
+
+.bubble.active {
+  background-color: #007bff;
+  /* Active bubble color */
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Add specific styling for links with class 'text-black' */
+a.text-black {
+  color: black;
+  /* Change link color to black */
+}
+
