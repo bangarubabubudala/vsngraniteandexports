@@ -2,9 +2,6 @@ import React from 'react'
 import { Container, Nav, NavDropdown, Navbar, Offcanvas } from 'react-bootstrap'
 import './Styles.css'
 import logo from './Logo/11.png'
-import { Link } from 'react-router-dom'
-
-const API = 'https://www.vsngraniteandexports.in'
 
 const TopNavbar = () => {
     return (
@@ -25,22 +22,22 @@ const TopNavbar = () => {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-5">
-                                <Nav.Link href={API}>Home</Nav.Link>
-                                <Nav.Link href={API + '/products'}>Products</Nav.Link>
+                                <Nav.Link href="/">Home</Nav.Link>
+                                <Nav.Link href="/products">Products</Nav.Link>
                                 <NavDropdown
-                                    title="Explore"
+                                    title="About"
                                     id={`offcanvasNavbarDropdown-expand-lg`}
                                     className="justify-content-end pe-5"
                                 >
-                                    <NavDropdown.Item href={API + "/about"}> About</NavDropdown.Item>
-                                    <NavDropdown.Item href={API + "/gallery"}>
+                                    <NavDropdown.Item href="/about">About</NavDropdown.Item>
+                                    <NavDropdown.Item href="/gallery">
                                         Gallery
                                     </NavDropdown.Item>
-                                    <NavDropdown.Item href={API + "/serives"}>
+                                    <NavDropdown.Item href="/serives">
                                         Services
                                     </NavDropdown.Item>
                                     <NavDropdown.Divider />
-                                    <NavDropdown.Item href={API + "/contactus"}>
+                                    <NavDropdown.Item href="/contactus">
                                         Contact Us
                                     </NavDropdown.Item>
                                 </NavDropdown>
