@@ -22,13 +22,13 @@ const About = () => {
                 <h4 style={{ textAlign: "center" }} className='h4wbc'>Manufactures Suppliers and Exporters of indian Granite and Marble</h4>
                 <hr className="wbc-hr-line" />
                 <div className="wbc-heading clearfix">
-                    <div className="default-heading-1" style={{ textAlign: "justify", wordWrap: "break-word", textAlign:'center', }}>
+                    <div className="default-heading-1" style={{ textAlign: "justify", wordWrap: "break-word", }}>
                         <b>VSN Granites and Exporters</b>&nbsp;
                         The Parent Company of the Group was established in 1996 by Mr. Shankar Naidu Veluri. Is one of the market leaders
                         and an ISO 9001:2015 Certified Manufacturers, Exporters & Suppliers of Natural Stones Chi.granite, Marble. Ever Since
                         its inception, the company has seen tremdous growth and till date continues to be one of the most reputed names in
                         the marble and Granite industry. The Company has regularly supplied marbles and Granite slabs. &nbsp;
-                        {showAnch && (<a href="#" style={{ textDecoration: "none", }} onClick={showCnt}>Read More</a>)}  <br />
+                        {showAnch && (<a href="#" style={{ textDecoration: "none", }} onClick={showCnt}>Read More</a>)} 
                         {show && (
                             <div>
                                 We are backed by a team of qualified professionals who have a rich knowledge of stone industry,

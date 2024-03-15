@@ -70,7 +70,7 @@ const Testimonials = () => {
     };
 
     const startSlideshow = () => {
-        const totalDuration = 160000; // Total duration for displaying all slides (in milliseconds)
+        const totalDuration = 80000; // Total duration for displaying all slides (in milliseconds)
         const intervalDuration = totalDuration / reviews.length;
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length);
@@ -126,7 +126,7 @@ const Testimonials = () => {
                             </Col>
                         </Row>
                         <div className="testimonial">
-                            <p>{item?.value}</p>
+                            <p style={{textAlign:"justify",wordWrap:"break-word"}}>{item?.value}</p>
 
                         </div>
 

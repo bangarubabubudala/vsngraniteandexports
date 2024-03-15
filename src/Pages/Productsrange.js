@@ -18,7 +18,7 @@ const Productsrange = () => {
               <div className="default-heading">WHAT MAKES US GREAT
                 <h3 className="special-heading-3">OUR <span className="wbc-color">PRODUCT RANGE</span></h3>
                 <hr className="wbc-hr" />
-                <p className="default-heading" style={{ textAlign: "center", wordWrap: "break-word" }}>
+                <p className="default-heading" style={{ textAlign: "justify", wordWrap: "break-word" }}>
                   Welcome to India's Top Manufacturer and Exporter of Granite, Marbles. PM International is
                   a wonderful hub for the finest quality Indian granite with a broad selection of marbles.
                   The architecture of households, offices, commercial buildings, hospitals, schools, and other

@@ -17,7 +17,7 @@ const Infraart = () => {
                     <div className="card-infra card--2x">
                         <div className="card__content big-script padding-large">
                             <h3><b>OUR INFRASTRUCTURE</b></h3>
-                            <div className="default-heading-infra" style={{ textAlign: 'center', wordWrap: "break-word" }}>
+                            <div className="default-heading-infra" style={{ textAlign: 'justify', wordWrap: "break-word" }}>
                                 <b> VSN GRANITE AND EXPORTS </b>
                                 relies on high-end machinery such as Block Dressing Machines, Multi Wire-Saw
                                 Machines, Resin Lin, Slabs line polish machines, Gang-Saws, Bridge Cutters,
