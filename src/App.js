@@ -1,24 +1,23 @@
-import React from 'react'
-import TopNavbar from './TopNavbar'
-import Footer from './Footer'
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './Components/Home'
+import TopNavbar from './TopNavbar';
+import Footer from './Footer';
+import Home from './Components/Home';
 import Productsrange from './Pages/Productsrange';
 import About from './Components/About';
 import Gallary from './Components/Gallary';
 import Services from './Components/Services';
 import ContactUs from './Components/ContactUs';
+import NotFound from './Components/NotFound'; // Custom 404 component
 import Preloader from '../src/Components/Preloader';
 
 const App = () => {
-
-  // this is preloader start
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500); // Change this to the time you want your preloader to show (in ms)
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -26,8 +25,6 @@ const App = () => {
   if (loading) {
     return <Preloader />;
   }
-  // end of the preloader
-
 
   return (
     <React.Fragment>
@@ -35,17 +32,17 @@ const App = () => {
         <TopNavbar />
         <div style={{ paddingTop: '120px' }} />
         <Routes>
-          <Route path="/" Component={Home} />
-          <Route path="/products" Component={Productsrange} />
-          <Route path="/about" Component={About} />
-          <Route path="/gallery" Component={Gallary} />
-          <Route path="/serives" Component={Home} />
-          <Route path="/contactus" Component={ContactUs} />
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Productsrange />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/gallery" element={<Gallary />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contactus" element={<ContactUs />} />
         </Routes>
         <Footer />
       </Router>
     </React.Fragment>
-  )
-}
+  );
+};
 
-export default App
+export default App;
