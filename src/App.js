@@ -31,16 +31,16 @@ const App = () => {
 
   return (
     <React.Fragment>
-      <Router>
+      <Router basename='/'>
         <TopNavbar />
         <div style={{ paddingTop: '120px' }} />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Productsrange />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/gallery" element={<Gallary />} />
-          <Route path="/serives" element={<Home />} />
-          <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/" Component={Home} />
+          <Route path="/products" Component={Productsrange} />
+          <Route path="/about" Component={About} />
+          <Route path="/gallery" Component={Gallary} />
+          <Route path="/serives" Component={Home} />
+          <Route path="/contactus" Component={ContactUs} />
         </Routes>
         <Footer />
       </Router>
