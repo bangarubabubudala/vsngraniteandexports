@@ -146,14 +146,14 @@ const Popicon = () => {
                             <input name='name' value={values?.name} type="text" onChange={(e) => {
                               setFieldValue("name", e.target.value)
                             }} />
-                            <span>Fullname</span>
+                            <span style={{ fontWeight: "", color: "black" }}>Full Name</span>
                             <small className="text-danger form-text"><ErrorMessage name={'name'} /></small><br />
                           </div>
                           <div className="inputbox">
                             <input name='email' value={values?.email} type="email" onChange={(e) => {
                               setFieldValue("email", e.target.value)
                             }} />
-                            <span>Email</span>
+                            <span style={{ fontWeight: "", color: "black" }}>Email</span>
                             <small className="text-danger form-text"><ErrorMessage name={'email'} /></small><br />
                           </div>
                           <div className="inputbox">
@@ -163,7 +163,7 @@ const Popicon = () => {
                                   setFieldValue("mobile", e.target.value)
                                 }
                               }} />
-                            <span>Mobile Number</span>
+                            <span style={{ fontWeight: "", color: "black" }}>Mobile Number</span>
                             <small className="text-danger form-text"><ErrorMessage name={'mobile'} /></small><br />
                           </div>
                           <div className="inputbox">
@@ -171,10 +171,10 @@ const Popicon = () => {
                               onChange={(e) => {
                                 setFieldValue("message", e.target.value)
                               }} />
-                            <span>Message</span>
+                            <span style={{ fontWeight: "", color: "black" }}>Message</span>
                             <small className="text-danger form-text"><ErrorMessage name={'message'} /></small><br />
                           </div>
-                          <div className="inputbox">
+                          <div style={{accentColor:"ButtonShadow"}} className="inputbox">
                             <div className="inputcenter">
                               <div>
                                 <input type="submit" value="send" />

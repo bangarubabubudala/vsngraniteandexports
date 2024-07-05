@@ -8,7 +8,6 @@ import About from './Components/About';
 import Gallary from './Components/Gallary';
 import Services from './Components/Services';
 import ContactUs from './Components/ContactUs';
-import NotFound from './Components/NotFound'; // Custom 404 component
 import Preloader from '../src/Components/Preloader';
 
 const App = () => {

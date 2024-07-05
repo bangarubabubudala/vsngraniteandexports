@@ -23,17 +23,17 @@ const Footer = () => {
 
               </div> */}
               <div className="footer-icons">
-                <i class="ri-facebook-circle-fill"></i>
-                <i class="ri-instagram-fill"></i>
+                <i className="ri-facebook-circle-fill"></i>
+                <i className="ri-instagram-fill"></i>
 
-                <i class="ri-twitter-x-fill"></i>
-                <i class="ri-youtube-fill"></i>
+                <i className="ri-twitter-x-fill"></i>
+                <i className="ri-youtube-fill"></i>
 
 
                 <a href="https://wa.me/9160940061?text=
-                Hello Vsn granites and exports" style={{ textDecoration: 'none' }}><i class="ri-whatsapp-fill"></i></a>
+                Hello Vsn granites and exports" style={{ textDecoration: 'none' }}><i className="ri-whatsapp-fill"></i></a>
               </div>
-              
+
             </div>
             <div className="col-md-6 col-lg-3 col-12 ft-2">
               <h5>Quick Links</h5>
@@ -68,10 +68,12 @@ const Footer = () => {
             </div>
             <div className="col-md-6 col-lg-4 col-12 ft-3">
               <h5>Contact Us</h5>
-              <a href="tellto: +91 9160940061" style={{ textDecoration: "none", }}><p>+91 9160940061</p></a>
+              <a href="tel:+919160940061" style={{textDecoration:"none"}}>
+                <p>+91 9160940061</p>
+              </a>
 
-              <a href="mailto: vsngraniteadnexports@gmail.com" style={{ textDecoration: "none", }}><p>vsngraniteadnexports@gmail.com</p></a>
-              <p>St.No.120/1, Kurnool Road, Yeluru -(V), Podili -(M), Prakasam dist, Andhrapradesh -523253.</p>
+              <a href="mailto:vsngraniteandexports@gmail.com" style={{ textDecoration: "none", }}><p>vsngraniteandexports@gmail.com</p></a>
+              <p>SY.No.120/1, Kurnool Road, Yeluru -(V), Podili -(M), Prakasam dist, Andhrapradesh -523253.</p>
             </div>
           </div>
         </div>
